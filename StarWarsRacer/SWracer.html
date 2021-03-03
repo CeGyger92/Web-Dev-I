@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+
+    body {
+        color: rgb(73, 251, 53);
+        
+    }
+    html {
+        height: 100%;
+        background-image: url('space.jpg');
+        background-repeat: no-repeat;
+        height: 100%;
+        background-size: 100% 100%;
+    }
+
+    h1 {
+        color: rgb(255, 232, 31);
+        font-family: "Franklin Gothic";
+    }
+
+    h2{
+        color:white;
+    }
+
+    img {
+        position: relative;
+        left: 0px;
+        
+        width: 150px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    textarea {
+        background-color: transparent;
+        color: rgb(73, 251, 53);
+        border-color:white;
+    }
+</style>
+
+
+
+<title>Gyger's Race</title>
+<script src="doorprize.js" defer></script>
+</head>
+
+<body>
+<div id="attendaceScreen" style="display:block;">
+    <h1>STARWARS Racers</h1>
+    <h2>Enter Names</h2>
+<textarea rows="50" cols="50" id="contestantBox"></textarea>
+    <br>
+    <button id="pickCon">Pick Contestants!</button>
+    
+</div>
+
+
+    <div id="contestantScreen" style="display:none;">
+        <h1>STARWARS Racers</h1>
+        <img src="falcon.png" alt="falcon" ><span id="falconRacer">Racer</span>
+        <input type="button" id="race" value="Race!" style="position:relative; top:-50px; left:50px; width:75px; height:75px;">
+        <input type="button" id="cancel" value="Cancel" style="position:relative; top:20px; left:-30px; width:75px; height:20px;"><br>
+        <img src="tie.png" alt="tie" ><span id="tieRacer">Racer</span><br>
+        <img src="speeder.png" alt="speeder" ><span id="speedRacer">Racer</span><br>
+        <img src="slave.png" alt="slave" ><span id="slaveRacer">Racer</span><br>
+        <img src="wing.png" alt="wing"><span id="wingRacer">Racer</span><br>
+
+        
+    </div>
+
+    <div id="raceScreen" style="display:none;">
+        <h1>STARWARS Racers</h1>
+        <h2 id="countdown">Ready...</h2>
+        <img src="falcon.png" alt="falcon" id="falcon" style="position:absolute; top:100px; left:0;"><br>
+        <img src="tie.png" alt="tie" id="tie" style="position:absolute; top:200px; left:0;"><br>
+        <img src="speeder.png" alt="speeder" id="speeder" style="position:absolute; top:450px; left:0;"><br>
+        <img src="slave.png" alt="slave" id="slave" style="position:absolute; top:550px; left:0;"><br>
+        <img src="wing.png" alt="wing" id="wing" style="position:absolute; top:800px; left:0;"><br>
+        <img src="vader.png" alt="vader" id="vader" style="position:absolute; top:-300px; left:175px;">
+
+        <audio id="SWT">
+            <source src="swt.mp3" type="audio/mp3" preload="auto">
+        </audio>
+        <audio id="hyper">
+            <source src="hyper.mp3" type="audio/mp3" preload="auto">
+        </audio>
+        <audio id="shoot">
+            <source src="attack.wav" type="audio/wav" preload="auto">
+        </audio>
+        <audio id="pow">
+            <source src="pow.mp3" type="audio/mp3" preload="auto">
+        </audio>
+        <video id="boom" style="width:150px;  z-index:-1;  display:none; position:absolute;">
+            
+            <source src="giphy.mp4">
+        </video>
+
+    </div>
+
+
+    <div id="winnerScreen" style="display:none">
+
+        <h1>STARWARS Racers</h1>
+        <h2>WINNER!!!</h2>
+       <img src="falcon.png" alt="winner" id="winnerImg"><span id="winnerId">Racer</span>
+
+
+    </div>
+
+</body>
+
+</html>

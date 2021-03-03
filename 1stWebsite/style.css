@@ -1,0 +1,85 @@
+nav ul {
+	list-style-type: none;
+	padding:0px;
+	display: inline;
+	
+}
+
+nav{
+	position:absolute;
+	left:0px;
+	width:100%;
+	background-color:red;
+	
+}
+
+nav ul li {
+	display: inline;
+	padding-left:30px;
+	padding-right:30px; 
+	background-color:red;	
+}
+
+nav ul li a {
+   text-decoration: none;  
+   background-color: red;
+	color: gold;
+   
+}
+
+ nav ul li a:hover {
+   background-color: gray;  
+   color: white;
+   border:solid black 2px;
+}
+
+body{
+	background-color:white;
+	font-color:black;
+	font-family:Arial;
+	font-size:14pt;
+	
+	
+	
+}
+
+.sectionNav{
+	margin:10px;
+	position:relative;
+	top:20px;
+	padding:5px;
+	float:right;
+	border:solid black 2px;
+}
+	
+
+
+/* unvisited link */
+a:link {
+    color: gold;
+}
+
+/* visited link */
+a:visited {
+    color: silver;
+}
+
+/* mouse over link */
+a:hover {
+    color: yellow;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+footer{
+	margin:20px;
+	text-align:center;
+	color:green;
+	
+	
+	
+	
+}
